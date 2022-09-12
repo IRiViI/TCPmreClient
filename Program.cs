@@ -10,9 +10,12 @@ namespace ClientServer {
 
         static void Main(string[] args){
             
+            
+            Client client = new Client("chess.ricksprojects.com", 4449); //This does not work well
 
-            Client client = new Client("chess.ricksprojects.com", 4449);
-            // Client client = new Client("localhost", 4449);
+            // Client client = new Client("localhost", 4449); // This does work well
+
+
             client.ConnectToServer();
 
             while (true){
